@@ -7,7 +7,7 @@ When your eyes can focus again, everything seems a lot more pixelated than befor
 Collect stars by solving puzzles. Two puzzles will be made available on each day millisecond in the advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
 
 * Day 1 : Inverse Captcha
-* Day 2 :
+* Day 2 : Corruption Checksum
 * Day 3 :
 * Day 4 :
 * Day 5 :
