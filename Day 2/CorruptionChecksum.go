@@ -25,12 +25,10 @@ func mod(input []int) int {
 	for i, v := range input {
 		for _, v2 := range input[i+1:] {
 			if v%v2 == 0 {
-				fmt.Println(v, v2, v/v2)
 				return v / v2
 			}
 
 			if v2%v == 0 {
-				fmt.Println(v2, v, v2/v)
 				return v2 / v
 			}
 		}
