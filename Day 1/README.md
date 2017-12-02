@@ -1,6 +1,6 @@
-# Day 1 : Inverse Captcha
+# Day 1: Inverse Captcha
 
---- Part One ---
+## --- Part One ---
 
 You're standing in a room with "digitization quarantine" written in LEDs along one wall. The only door is locked, but it includes a small interface. "Restricted Area - Strictly No Digitized Users Allowed."
 
@@ -17,7 +17,7 @@ For example:
 
 What is the solution to your captcha?
 
---- Part Two ---
+## --- Part Two ---
 
 You notice a progress bar that jumps to 50% completion. Apparently, the door isn't yet satisfied, but it did emit a star as encouragement. The instructions change:
 
