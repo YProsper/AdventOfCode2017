@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func corruptionChecksumPartOne(input [][]int) int {
+func partOne(input [][]int) int {
 	result := 0
 	for _, v := range input {
 		result += diffMaxMin(v)
@@ -17,7 +17,7 @@ func corruptionChecksumPartOne(input [][]int) int {
 	return result
 }
 
-func corruptionChecksumPartTwo(input [][]int) int {
+func partTwo(input [][]int) int {
 	result := 0
 	for _, v := range input {
 		result += mod(v)
@@ -84,8 +84,8 @@ func main() {
 	input := readInputFile(inputFile)
 
 	// --- Part One ---
-	fmt.Println("Part 1 answer : ", corruptionChecksumPartOne(input))
+	fmt.Println("Part 1 answer : ", partOne(input))
 
 	// --- Part Two ---
-	fmt.Println("Part 2 answer : ", corruptionChecksumPartTwo(input))
+	fmt.Println("Part 2 answer : ", partTwo(input))
 }
