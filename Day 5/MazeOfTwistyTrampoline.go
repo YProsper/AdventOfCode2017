@@ -8,17 +8,7 @@ import (
 )
 
 func partOne(filename string) int {
-	input, _ := os.Open(filename)
-	defer input.Close()
-
-	scanner := bufio.NewScanner(input)
-
-	table := make([]int, 0, 50)
-	for scanner.Scan() {
-		i, _ := strconv.Atoi(scanner.Text())
-		table = append(table, i)
-	}
-
+	table := readInputFile(filename)
 	ip, nbJmps := 0, 0
 	for ip < len(table) {
 		jmp := table[ip]
@@ -31,17 +21,7 @@ func partOne(filename string) int {
 }
 
 func partTwo(filename string) int {
-	input, _ := os.Open(filename)
-	defer input.Close()
-
-	scanner := bufio.NewScanner(input)
-
-	table := make([]int, 0, 50)
-	for scanner.Scan() {
-		i, _ := strconv.Atoi(scanner.Text())
-		table = append(table, i)
-	}
-
+	table := readInputFile(filename)
 	ip, nbJmps := 0, 0
 	for ip < len(table) {
 		jmp := table[ip]
@@ -55,6 +35,21 @@ func partTwo(filename string) int {
 	}
 
 	return nbJmps
+}
+
+func readInputFile(filename string) []int {
+	input, _ := os.Open(filename)
+	defer input.Close()
+
+	scanner := bufio.NewScanner(input)
+
+	table := make([]int, 0, 50)
+	for scanner.Scan() {
+		i, _ := strconv.Atoi(scanner.Text())
+		table = append(table, i)
+	}
+
+	return table
 }
 
 func main() {
