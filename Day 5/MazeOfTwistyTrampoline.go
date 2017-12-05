@@ -10,7 +10,7 @@ import (
 func partOne(filename string) int {
 	table := readInputFile(filename)
 	ip, nbJmps := 0, 0
-	for ip < len(table) {
+	for ip >= 0 && ip < len(table) {
 		jmp := table[ip]
 		table[ip]++
 		ip += jmp
@@ -23,7 +23,7 @@ func partOne(filename string) int {
 func partTwo(filename string) int {
 	table := readInputFile(filename)
 	ip, nbJmps := 0, 0
-	for ip < len(table) {
+	for ip >= 0 && ip < len(table) {
 		jmp := table[ip]
 		if jmp >= 3 {
 			table[ip]--
