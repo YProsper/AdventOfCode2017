@@ -15,7 +15,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 * Day 3 : Spiral Memory
 * Day 4 : High-Entropy Passphrases
 * Day 5 : A Maze of Twisty Trampolines, All Alike
-* Day 6 :
+* Day 6 : Memory Reallocation
 * Day 7 :
 * Day 8 :
 * Day 9 :
