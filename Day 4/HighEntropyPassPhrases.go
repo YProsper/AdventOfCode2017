@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"regexp"
 	"sort"
 	"strings"
 )
@@ -17,9 +16,8 @@ func partOne(filename string) int {
 	scanner.Split(bufio.ScanLines)
 
 	nbValids := 0
-	var re = regexp.MustCompile(`[a-z]*`)
 	for scanner.Scan() {
-		if !hasDuplicate(re.FindAllString(scanner.Text(), -1)) {
+		if !hasDuplicate(strings.Fields(scanner.Text())) {
 			nbValids++
 		}
 	}
@@ -48,9 +46,8 @@ func partTwo(filename string) int {
 	scanner.Split(bufio.ScanLines)
 
 	nbValids := 0
-	var re = regexp.MustCompile(`[a-z]*`)
 	for scanner.Scan() {
-		if !hasPalyndrome(re.FindAllString(scanner.Text(), -1)) {
+		if !hasPalyndrome(strings.Fields(scanner.Text())) {
 			nbValids++
 		}
 	}
