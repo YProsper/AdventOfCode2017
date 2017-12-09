@@ -1,4 +1,4 @@
-# Day 5: A Maze of Twisty Trampolines, All Alike
+# --- Day 5: A Maze of Twisty Trampolines, All Alike ---
 
 ## --- Part One ---
 

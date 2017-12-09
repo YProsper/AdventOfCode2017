@@ -1,4 +1,4 @@
-# Day 6: Memory Reallocation
+# --- Day 6: Memory Reallocation ---
 
 ## --- Part One ---
 

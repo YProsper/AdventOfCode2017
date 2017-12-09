@@ -1,4 +1,4 @@
-# Day 4: High-Entropy Passphrases
+# --- Day 4: High-Entropy Passphrases ---
 
 ## --- Part One ---
 

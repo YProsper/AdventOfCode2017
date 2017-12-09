@@ -1,4 +1,4 @@
-# Day 3: Spiral Memory
+# --- Day 3: Spiral Memory ---
 
 ## --- Part One ---
 

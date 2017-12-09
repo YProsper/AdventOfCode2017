@@ -1,4 +1,4 @@
-# Day 2: Corruption Checksum
+# --- Day 2: Corruption Checksum ---
 
 ## --- Part One ---
 
