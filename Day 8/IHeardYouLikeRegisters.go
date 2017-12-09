@@ -44,11 +44,6 @@ func partOneAndTwo(instructions [][]string) (int, int) {
 		}
 
 		if condIsTrue {
-			_, ok := registers[reg1]
-			if !ok {
-				registers[reg1] = 0
-			}
-
 			switch v, _ := strconv.Atoi(instruction[2]); instruction[1] {
 			case "inc":
 				registers[reg1] += v
