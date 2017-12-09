@@ -16,9 +16,9 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 * Day 4 : High-Entropy Passphrases
 * Day 5 : A Maze of Twisty Trampolines, All Alike
 * Day 6 : Memory Reallocation
-* Day 7 :
-* Day 8 :
-* Day 9 :
+* Day 7 : Recursive Circus
+* Day 8 : I Heard You Like Registers
+* Day 9 : Stream Processing
 * Day 10 :
 * Day 11 :
 * Day 12 :
