@@ -16,9 +16,9 @@ func partOne(input []byte) int {
 		}
 	}
 
-	list := make([]int, 0, 256)
-	for i := 0; i < 256; i++ {
-		list = append(list, i)
+	list := make([]int, 256)
+	for i := range list {
+		list[i] = i
 	}
 
 	currentPosition := 0
@@ -29,16 +29,18 @@ func partOne(input []byte) int {
 }
 
 func partTwo(input []byte) string {
-	tmp := append(input, []byte{17, 31, 73, 47, 23}...)
+	tmp := make([]byte, len(input))
+	copy(tmp, input)
+	tmp = append(tmp, []byte{17, 31, 73, 47, 23}...)
 
 	lengths := make([]int, 0, len(tmp))
 	for _, v := range tmp {
 		lengths = append(lengths, int(v))
 	}
 
-	list := make([]int, 0, 256)
-	for i := 0; i < 256; i++ {
-		list = append(list, i)
+	list := make([]int, 256)
+	for i := range list {
+		list[i] = i
 	}
 
 	currentPosition := 0
