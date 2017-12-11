@@ -8,12 +8,9 @@ import (
 )
 
 func partOne(input []byte) int {
-	lengths := make([]int, 0, len(input))
-	for _, v := range strings.Split(string(input), ",") {
-		i, _ := strconv.Atoi(v)
-		if i < 256 {
-			lengths = append(lengths, i)
-		}
+	lengths := make([]int, len(input))
+	for i, v := range strings.Split(string(input), ",") {
+		lengths[i], _ = strconv.Atoi(v)
 	}
 
 	list := make([]int, 256)
@@ -33,9 +30,9 @@ func partTwo(input []byte) string {
 	copy(tmp, input)
 	tmp = append(tmp, []byte{17, 31, 73, 47, 23}...)
 
-	lengths := make([]int, 0, len(tmp))
-	for _, v := range tmp {
-		lengths = append(lengths, int(v))
+	lengths := make([]int, len(tmp))
+	for i, v := range tmp {
+		lengths[i] = int(v)
 	}
 
 	list := make([]int, 256)
@@ -51,9 +48,9 @@ func partTwo(input []byte) string {
 
 	denseHash := make([]int, 0, 16)
 
-	for i := 0; i < 16; i++ {
-		tmp := list[i*16]
-		for j := i*16 + 1; j < i*16+16; j++ {
+	for i := 0; i < 256; i += 16 {
+		tmp := list[i]
+		for j := i + 1; j < i+16; j++ {
 			tmp ^= list[j]
 		}
 		denseHash = append(denseHash, tmp)
