@@ -20,7 +20,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 * Day 8 : I Heard You Like Registers
 * Day 9 : Stream Processing
 * Day 10 : Knot Hash
-* Day 11 :
+* Day 11 : Hex Ed
 * Day 12 :
 * Day 13 :
 * Day 14 :
