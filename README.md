@@ -21,7 +21,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 * Day 9 : Stream Processing
 * Day 10 : Knot Hash
 * Day 11 : Hex Ed
-* Day 12 :
+* Day 12 : Digital Plumber
 * Day 13 :
 * Day 14 :
 * Day 15 :
