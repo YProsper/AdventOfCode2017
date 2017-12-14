@@ -23,7 +23,6 @@ This means that there is a layer immediately inside the firewall (with range 3),
 
 Within each layer, a security scanner moves back and forth within its range. Each security scanner starts at the top and moves down until it reaches the bottom, then moves up until it reaches the top, and repeats. A security scanner takes one picosecond to move one step. Drawing scanners as S, the first few picoseconds look like this:
 
-
 Picosecond 0:
  0   1   2   3   4   5   6
 [S] [S] ... ... [S] ... [S]
@@ -74,7 +73,6 @@ Picosecond 0:
 [ ]             [ ]     [ ]
                 [ ]     [ ]
 
-
 Picosecond 1:
  0   1   2   3   4   5   6
 [ ] ( ) ... ... [ ] ... [ ]
@@ -87,7 +85,6 @@ Picosecond 1:
 [ ] [ ]         [ ]     [ ]
 [S]             [S]     [S]
                 [ ]     [ ]
-
 
 Picosecond 2:
  0   1   2   3   4   5   6
@@ -102,7 +99,6 @@ Picosecond 2:
 [ ]             [ ]     [ ]
                 [S]     [S]
 
-
 Picosecond 3:
  0   1   2   3   4   5   6
 [ ] [ ] ... (.) [ ] ... [ ]
@@ -115,7 +111,6 @@ Picosecond 3:
 [ ] [ ]         [ ]     [ ]
 [ ]             [S]     [S]
                 [ ]     [ ]
-
 
 Picosecond 4:
  0   1   2   3   4   5   6
@@ -130,7 +125,6 @@ Picosecond 4:
 [ ]             [ ]     [ ]
                 [ ]     [ ]
 
-
 Picosecond 5:
  0   1   2   3   4   5   6
 [ ] [ ] ... ... [ ] (.) [ ]
@@ -143,7 +137,6 @@ Picosecond 5:
 [ ] [ ]         [ ]     [ ]
 [S]             [ ]     [ ]
                 [ ]     [ ]
-
 
 Picosecond 6:
  0   1   2   3   4   5   6
@@ -192,7 +185,6 @@ Picosecond 10:
 [ ]             [ ]     [ ]
                 [ ]     [ ]
 
-
 Picosecond 11:
  0   1   2   3   4   5   6
 [ ] ( ) ... ... [ ] ... [ ]
@@ -205,7 +197,6 @@ Picosecond 11:
 [ ] [ ]         [ ]     [ ]
 [ ]             [ ]     [ ]
                 [ ]     [ ]
-
 
 Picosecond 12:
  0   1   2   3   4   5   6
@@ -220,7 +211,6 @@ Picosecond 12:
 [ ]             [ ]     [ ]
                 [ ]     [ ]
 
-
 Picosecond 13:
  0   1   2   3   4   5   6
 [ ] [ ] ... (.) [ ] ... [ ]
@@ -233,7 +223,6 @@ Picosecond 13:
 [ ] [ ]         [ ]     [ ]
 [S]             [S]     [S]
                 [ ]     [ ]
-
 
 Picosecond 14:
  0   1   2   3   4   5   6
@@ -248,7 +237,6 @@ Picosecond 14:
 [ ]             [ ]     [ ]
                 [S]     [S]
 
-
 Picosecond 15:
  0   1   2   3   4   5   6
 [ ] [ ] ... ... [ ] (.) [ ]
@@ -261,7 +249,6 @@ Picosecond 15:
 [ ] [ ]         [ ]     [ ]
 [ ]             [S]     [S]
                 [ ]     [ ]
-
 
 Picosecond 16:
  0   1   2   3   4   5   6
