@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"os"
 )
 
 func inverseCaptcha(input string, match int) int {
@@ -19,7 +18,7 @@ func inverseCaptcha(input string, match int) int {
 }
 
 func main() {
-	inputBytes, _ := ioutil.ReadFile(os.Args[1])
+	inputBytes, _ := ioutil.ReadFile("input.txt")
 	input := string(inputBytes)
 
 	// --- Part One ---
